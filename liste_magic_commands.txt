@@ -1,0 +1,79 @@
+> This list is sorted from the easiest to the hardest to add to Basthon.
+
+## Possible, probably not too hard
+
+### `%time`,`%%time`
+They should be quite easy, as the feature they offer is basic. I haven't checked the code behind yet, but I guess it's easy.
+They don't benchmark anything, they just just report the time spent.
+
+### `%cat`
+cat external files. Possible I guess!
+
+### `%tutor`: https://github.com/kikocorreoso/tutormagic/
+### `%nbtutor `: https://github.com/lgpage/nbtutor/
+probably usable, by being modified.
+I'm extra interested in one of these! No need for both (`%tutor` from `tutormagic` is the best)
+If your kernel and notebook offer a way from Python code to display HTML (like IPython.display.display() function), then it would be easy: just display a iframe.
+
+> I'm interested in implementing this myself.
+
+
+## Maybe possible in Basthon, probably quite hard
+
+### `%debug`
+defined in the same file as`%timeit and others`, it's probably harder due to the interaction needed.
+
+### `%matplotlib inline`
+
+I guess it's the default behavior of matplotlib in Basthon anyway?
+
+
+## My dream goal
+
+### `%ocaml`,`%%ocaml`
+From <https://pypi.org/project/ocaml/#files>
+And also kernel ocaml : <https://github.com/akabe/ocaml-jupyter/>
+
+It's probably... possible... by using the JS interpreter of OCaml that powers editors like <https://betterocaml.ml/>, <https://try.ocamlpro.com/> (see <https://github.com/ocsigen/js_of_ocaml> if you're curious)
+
+The first thing to do would be to try to use the JS interpreter as an other mode of Basthon notebook, instead of calling the PyIodide Python interpreter.
+If this works, it would directly help 4000+ students in CPGE MPSI/MP and 1200 MP2I/MPI every year...
+
+If this works, we can think of also allowing a Python session to open under the hood a pipe to a new OCaml session, and launch every`%%ocaml` cells  in it !
+
+> I'm VERY VERY interested in trying to merge this in Basthon !
+> I'm an expert OCaml user, but not yet familiar with these interpreters, I don't know yet how to just send some code, receive the answer, I'll have to investigate.
+
+
+### `%prun stuff to benchmark`, `%lprun stuff to benchmark`, `%mprun stuff to benchmark`
+> benchmark, line by line by time, line by line for memory
+
+Comes from different extensions, and maybe overkill to add them, `%timeit` and `%memit` would already be awesome.
+
+
+## Not possible in Basthon.
+
+### `%bash`,`%perl`,`%pypy`,`%ruby`,`%script`
+
+calls external interpreters, not possible on Basthon. And not useful for Basthon
+
+### `%cython`
+
+uses Cython, which uses GCC, so not possible
+
+### `%reload_ext`,`%load_ext`
+
+maybe possible depending on how the module loading is implemented, but probably useless?
+Except for`%ocaml` and `%%ocaml`, that would be harder.
+
+### `%itikz`
+
+impossible, it uses LaTeX under the hood
+
+### `%watermark`: <https://github.com/rasbt/watermark>
+
+possible but quite useless...
+
+### `%%pixie_debugger`: <https://github.com/pixiedust/pixiedust/>
+
+just too hard

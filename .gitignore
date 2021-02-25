@@ -2,7 +2,12 @@
 *~
 .*.swp
 
+# Unwatched sub folders
 *.git/
+notebook
+python
+console
+jupyter
 
 *ocaml_history.ml
 
