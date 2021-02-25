@@ -1,4 +1,4 @@
-# Basthon
+# Mon utilisation de *Basthon*
 > [Un bac à sable pour Python, dans le navigateur !](https://basthon.fr/about.html)
 Voir <https://basthon.fr/> pour plus d'informations.
 
@@ -8,7 +8,7 @@ Ce dossier contient une installation locale des logiciels suivants, faite le 24/
 
 ## basthon-console
 
-- [depuis ce zip](https://notebook.basthon.fr/basthon-notebook.zip)
+- [depuis ce zip](https://console.basthon.fr/basthon-console.zip)
 - TODO accessible sur mon site sur ce dossier : [console/](./console/), et aussi [python](./python/)
 - TODO aussi sur <http://python.besson.link/> (pas HTTPS, je peux pas sur ces sous-domaines TODO: essayez autrement ?)
 

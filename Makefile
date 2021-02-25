@@ -2,8 +2,11 @@
 SHELL := /bin/bash -o pipefail
 
 send_zamok:
-	CP --exclude=.git ./notebook ${Szam}/Basthon/notebook/
-	CP --exclude=.git ./console ${Szam}/Basthon/notebook/
+	# CP --exclude=.git ./notebook ${Szam}/Basthon/notebook/
+	# CP --exclude=.git ./console ${Szam}/Basthon/notebook/
+	CP --exclude=.git --exclude=./basthon-console.git --exclude=./basthon-kernel.git --exclude=./basthon-notebook.git ./ ${Szam}/Basthon/
+
+--exclude=./basthon-console.git --exclude=./basthon-kernel.git --exclude=./basthon-notebook.git
 
 send_public:
 	# TODO
