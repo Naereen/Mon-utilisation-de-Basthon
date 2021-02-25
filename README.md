@@ -1,4 +1,5 @@
 # Mon utilisation de *Basthon*
+
 > [Un bac à sable pour Python, dans le navigateur !](https://basthon.fr/about.html)
 Voir <https://basthon.fr/> pour plus d'informations.
 
@@ -6,17 +7,21 @@ TL;DR: c'est génial, Python + Jupyter notebook en ligne, gratuitement, sans com
 
 Ce dossier contient une installation locale des logiciels suivants, faite le 24/02/2021, et maintenue manuellement à jour, donc possiblement en retard de la version officielle :
 
-## basthon-console
+## Console Python (`basthon-console`)
 
-- [depuis ce zip](https://console.basthon.fr/basthon-console.zip)
-- TODO accessible sur mon site sur ce dossier : [console/](./console/), et aussi [python](./python/)
-- TODO aussi sur <http://python.besson.link/> (pas HTTPS, je peux pas sur ces sous-domaines TODO: essayez autrement ?)
+- 👌 [Depuis ce zip](https://console.basthon.fr/basthon-console.zip), que j'ai téléchargé et extrait dans le bon dossier ;
+- 💥 Attention, il faut aussi récupérer [la dernière version de pyodide](https://github.com/iodide-project/pyodide/releases) et la mettre dans le dossier, comme indiqué dans la doc !
+- 👌 Accessible [sur mon site sur ce dossier](https://perso.crans.org/besson/Basthon/python) : [python/](./python/), et aussi [console](./console/) ;
+- 👌 aussi sur <https://besson.link/Basthon/python/> ;
+- 👌 aussi sur <http://python.besson.link/> (pas HTTPS, je peux pas sur ces sous-domaines TODO: essayez autrement ?)
 
-## baston-notebook
+## Notebook Jupyter Python (`baston-notebook`)
 
-- [depuis cet autre zip](https://notebook.basthon.fr/basthon-notebook.zip)
-- TODO accessible sur mon site sur ce dossier : [notebook/](./notebook/), et aussi [jupyter](./jupyter/)
-- TODO aussi sur <http://jupyter.besson.link/> (pas HTTPS, je peux pas sur ces sous-domaines TODO: essayez autrement ?)
+- 👌[Depuis cet autre zip](https://notebook.basthon.fr/basthon-notebook.zip)
+- 👌 accessible sur mon site sur ce dossier : [notebook/](./notebook/), et aussi [jupyter](./jupyter/)
+- 👌 aussi sur <http://notebook.besson.link/> (pas HTTPS, je peux pas sur ces sous-domaines TODO: essayez autrement ?)
+
+> Combien de temps ? Entre lire la doc, téléchargez, extraire, vérifiez que ça marche en local, me faire piéger par ma nouvelle règle `CP --cvs-exclude` donnée à [rsync](http://rsync.org/) pour envoyer les fichiers, déboguer ça, et tester sur les sites distants, puis configurer les redirections sur mon serveur... 1h40min, à *2021-02-25 04:42:04*.
 
 ## Code sources ?
 
@@ -36,21 +41,27 @@ Je garde ici une copie locale des dépôts suivants (mais pas publié en ligne d
 
 ## TODO et suggestions à Basthon ?
 
-## Amélioratio de Basthon python
+## Amélioration de Basthon python
 
 - [ ] TODO: et pourquoi pas utiliser les cell magic de IPython ? https://framagit.org/Naereen/basthon-kernel/-/issues/1
 - [ ] TODO: ajouter l'extension Jupyter tutormagic, lolviz, rcviz ? même ticket
-- [x] TODO: ajouter l'extension Jupyter RISE ! https://framagit.org/Naereen/basthon-kernel/-/issues/4
+- [x] TODO: [ajouter l'extension Jupyter RISE](https://framagit.org/Naereen/basthon-kernel/-/issues/4) : inutile, c'est déjà là !
 
 ### Et Basthon pour OCaml ?
+
+> C'est ambitieux... Mais je veux intégrer [BetterOCaml](https://github.com/jbdo99/BetterOCaml/) (voir <https://betterocaml.ml/>) dans Basthon notebook et console...
 
 - [ ] TODO: https://framagit.org/Naereen/basthon-kernel/-/issues/2
 
 ### Et Basthon pour SQLite/SQL ?
 
+> C'est ambitieux... Mais je veux intégrer [SQL.js](https://sql.js.org/) (voir <https://sql.js.org/>) dans Basthon notebook et console...
+
 - [ ] TODO: https://framagit.org/Naereen/basthon-kernel/-/issues/2
 
 ### Et Basthon pour du C ?
+
+> C'est ambitieux... Mais je veux intégrer [JSCPP](https://github.com/felixhao28/JSCPP/) (voir <https://felixhao28.github.io/JSCPP//>) dans Basthon notebook et console...
 
 - [ ] TODO: https://framagit.org/Naereen/basthon-kernel/-/issues/2
 
